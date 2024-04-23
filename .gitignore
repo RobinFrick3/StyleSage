@@ -1,0 +1,4 @@
+backend\venv
+backend\app\__pycache__
+backend\app\functions\__pycache__
+backend\app\brain\__pycache__

@@ -1,0 +1,197 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+header {
+    background-color: #ffffff;
+    padding: 15px 70px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    z-index: 999;
+}
+
+.logo img {
+    max-height: 40px;
+    width: auto;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-left: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #444444;
+    font-weight: bold;
+}
+
+nav ul li a:hover,
+nav ul li a.selected {
+    color: #0E223A;
+}
+
+main {
+    margin-top: 100px;
+    padding: 20px;
+}
+
+.Titel {
+    text-align: left;
+    color: #0E223A;
+}
+
+.content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.image img {
+    max-height: 400px;
+    width: auto;
+    padding-left: 30px;
+}
+
+.text-block {
+    width: 30%;
+    padding-right: 30px;
+    padding-left: 10px;
+}
+
+button {
+    background-color: #0E223A;
+    color: #ffffff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+footer {
+    background-color: #0E223A;
+    color: #ffffff;
+    padding: 20px;
+    text-align: center;
+}
+
+.social-icons img {
+    width: 30px;
+    margin: 0 10px;
+}
+
+.links {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.links ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    margin-right: 40px;
+}
+
+.links ul li {
+    margin-bottom: 5px;
+    margin-right: 20px;
+}
+
+.links ul li a {
+    text-decoration: none;
+    color: white;
+}
+
+.links ul li:last-child {
+    margin-right: 0;
+}
+
+.social-icons {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.social-icons i {
+    margin: 0 10px;
+}
+
+#drop_zone {
+    border: 2px dashed #bbb;
+    border-radius: 5px;
+    width: 20%;
+    padding: 50px;
+    text-align: center;
+    font-size: 1.2em;
+    margin-bottom: 20px;
+}
+
+.furniture {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    max-height: 600px; /* Maximalhöhe der Galerie */
+    overflow-y: auto; /* Scrollen, wenn mehr Tiles vorhanden sind */
+    padding: 20px; /* Abstand um die Tiles */
+    box-sizing: border-box; /* Das padding wird in die Höhe der Galerie einbezogen */
+    background-color: #ffffff; /* Hintergrundfarbe der Galerie */
+    border: 1px solid #cccccc; /* Rand um die Galerie */
+    border-radius: 5px; /* Abgerundete Ecken */
+}
+
+/* Tile */
+.tile {
+    width: 200px; /* Breite des Tiles */
+    height: 260px; /* Höhe des Tiles */
+    margin: 10px; /* Abstand zwischen den Tiles */
+    text-align: center;
+    overflow: hidden; /* Überlauf verstecken, wenn das Bild größer als das Tile ist */
+    background-color: #f9f9f9; /* Hintergrundfarbe des Tiles */
+    border: 1px solid #dddddd; /* Rand um das Tile */
+    border-radius: 5px; /* Abgerundete Ecken */
+    position: relative; /* Position relativ für die Platzierung des Texts */
+    transition: box-shadow 0.3s; /* Übergangseffekt für Box-Schatten */
+}
+
+.tile:hover {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); /* Box-Schatten, wenn die Maus darüber hovert */
+}
+
+/* Bild im Tile */
+.tile img {
+    width: auto; /* Automatische Breite des Bildes */
+    height: 100%; /* Die Höhe des Bildes beträgt 100% des Containers */
+    object-fit: cover; /* Das Bild wird proportioniert und zugeschnitten, um den Container zu füllen */
+    object-position: center; /* Das Bild wird zentriert positioniert */
+    position: absolute; /* Position absolut für die Platzierung des Bildes */
+    top: 0; /* Bild oben ausrichten */
+    left: 50%; /* Bild horizontal zentrieren */
+    transform: translateX(-50%); /* Bild horizontal zentrieren */
+}
+
+/* Text im Tile */
+.tile p {
+    margin: 0; /* Abstand des Textes zurücksetzen */
+    padding: 10px; /* Innenabstand für den Text */
+    background-color: rgba(255, 255, 255, 0.8); /* Hintergrundfarbe des Textcontainers mit Transparenz */
+    position: absolute; /* Position absolut für die Platzierung des Texts */
+    bottom: 0; /* Text unten ausrichten */
+    left: 0; /* Text links ausrichten */
+    width: 100%; /* Breite des Textcontainers 100% */
+    box-sizing: border-box; /* Innenabstand und Ränder in die Breite und Höhe einschließen */
+}

@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>StyleSage-Interieurs</title>
+    <link rel="icon" type="image/png" href="../static/Bilder/PageIcon.png">
+    <link rel="stylesheet" href="../static/Css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="../static/Bilder/logo.png" alt="Bild">
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#">Products</a></li>
+                <li><a href="#">About Us</a></li>
+                <li><a class="selected" href="#">Buy</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h1 class="Titel">Raumplaner StyleSage Pro</h1>
+        <div class="content">
+            <div class="image">
+                <img id="uploadedImage" src="" alt="Hochgeladenes Bild">
+            </div>
+            <div class="gallery">
+                <div class="galleryHead">
+                    <h2>Stylekategorie</h2>
+                    <div class="filter">
+                        <select id="furnitureType" onchange="filterFurniture()">
+                            <option value="0">Alle Möbelkategorien</option>
+                            <option value="1">Sofa</option>
+                            <option value="2">Regal</option>
+                            <option value="3">Schrank</option>
+                            <option value="4">Sideboard</option>
+                            <option value="5">Bett</option>
+                            <option value="6">Beleuchtung</option>
+                            <option value="7">Deko</option>
+                            <option value="8">Tisch</option>
+                            <option value="9">Stuhl</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="furniture" id="gallery">
+                    <!-- Hier werden die Kacheln hinzugefügt -->
+                </div>
+            </div>
+        </div>
+    </main>    
+    <footer>
+        <div class="social-icons">
+            <i class="fab fa-facebook" style="color: white;"></i>
+            <i class="fab fa-twitter" style="color: white;"></i>
+            <i class="fab fa-google" style="color: white;"></i>
+            <i class="fab fa-instagram" style="color: white;"></i>
+        </div>
+        <div class="links">
+            <ul>
+                <li><a href="#">Contact</a></li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Terms & Conditions</a></li>
+            </ul>
+            <ul>
+                <li><a href="#">Careers</a></li>
+                <li><a href="#">Change Country</a></li>
+                <li><a href="#">FAQ</a></li>
+            </ul>
+        </div>
+    </footer>
+    <script src="../static/JavaScript/analyse.js"></script>
+</body>
+</html>
